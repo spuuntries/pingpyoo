@@ -1,9 +1,9 @@
 {
-  "name": "kekwelcome",
+  "name": "pingpyoo",
   "version": "0.4.20-alpha",
   "description": "Kek's pinging to shit module for Piyo birbday.",
   "main": "bot.js",
-  "repository": "https://github.com/spuuntries/kekwelcome",
+  "repository": "https://github.com/spuuntries/pingpyoo",
   "author": "kek/spuun",
   "license": "AGPL-3.0-only",
   "private": true,

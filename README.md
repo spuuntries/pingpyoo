@@ -7,8 +7,8 @@
 
 > Copyright (C) 2021 by kekboi, Art Union org.  
 > License Notice:  
-> Any code within this repository and any derivatives thereof are to be licensed with Affero GPL as published by the FSF,  
-> version 3 only, under `kekboi, Art Union org.`, see `LICENSE.md` for details.  
+> Any code within this repository and any derivatives thereof are to be licensed with Affero GPL as published by the FSF, version 3 only,  
+> under `kekboi, Art Union org.`'s name, see `LICENSE.md` for details.  
 
 
 ## Dependencies:
