@@ -1,5 +1,5 @@
 /*
-        Kek's welcoming module for AU.
+        Kek's pinging to shit module for Piyo birbday.
         Copyright (C) 2021 kekboi, Art Union org.
 
         This program is free software: you can redistribute it and/or modify

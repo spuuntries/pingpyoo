@@ -1,7 +1,7 @@
 {
   "name": "kekwelcome",
-  "version": "1.0.69",
-  "description": "Kek's welcoming module for AU.",
+  "version": "0.4.20-alpha",
+  "description": "Kek's pinging to shit module for Piyo birbday.",
   "main": "bot.js",
   "repository": "https://github.com/spuuntries/kekwelcome",
   "author": "kek/spuun",
@@ -9,7 +9,6 @@
   "private": true,
   "dependencies": {
     "discord.js": "^13.3.1",
-    "dotenv": "^10.0.0",
-    "enmap": "^5.8.7"
+    "dotenv": "^10.0.0"
   }
 }
