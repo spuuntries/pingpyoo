@@ -56,10 +56,14 @@ client.on("ready", () => {
       );
     }
   });
-  
+
   function pingPoo() {
     let randTim = Math.floor(Math.random() * procenv.TIMERANGE),
-    msges = procenv.MESSAGES.split("|")
+      msges = procenv.MESSAGES.split("|");
+
+    client.fetchWebhook(gura.split("/")[0], gura.split("/")[1]).then((web) => {
+      web.send({ content: msges[Math.floor(Math.random() * msges.length)] });
+    });
 
     logger(`Sending anuda ping in ${randTim} minutes!`);
     setTimeout(() => {}, randTim * 60000);
