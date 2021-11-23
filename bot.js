@@ -22,6 +22,7 @@ const procenv = process.env,
     intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_WEBHOOKS"],
   }),
   pkg = require("./package.json"),
+  db = require("quick.db"),
   gura = procenv.WEBURL.split("/webhooks/").pop();
 
 function logger(string = "logger logging") {
@@ -59,13 +60,42 @@ client.on("ready", () => {
 
   function pingPoo() {
     let randTim = Math.floor(Math.random() * procenv.TIMERANGE),
-      msges = procenv.MESSAGES.split("|");
+      motes = procenv.MOTES.split("|"),
+      msges = procenv.MESSAGES.split("|")
+        .map((m) => m.replace(`<ping>`, `<@${procenv.MEMID}>`))
+        .map((m) =>
+          m.replace(
+            `<mote>`,
+            `${motes[Math.floor(Math.random() * motes.length)]}`
+          )
+        ),
+      numba = db.get("number");
 
-    client.fetchWebhook(gura.split("/")[0], gura.split("/")[1]).then((web) => {
-      web.send({ content: msges[Math.floor(Math.random() * msges.length)] });
-    });
+    if (numba <= procenv.PINGRANGE) {
+      client
+        .fetchWebhook(gura.split("/")[0], gura.split("/")[1])
+        .then((web) => {
+          web.send({
+            content: msges[Math.floor(Math.random() * msges.length)],
+          });
+        })
+        .then((m) => {
+          if (m) {
+            logger(
+              `sent ping number #${numba} to ${
+                client.users.cache.get(procenv.MEMID).tag
+              }`
+            );
+          }
+        });
 
-    logger(`Sending anuda ping in ${randTim} minutes!`);
-    setTimeout(() => {}, randTim * 60000);
+      logger(`sending anuda ping in ${randTim} minutes!`);
+      setTimeout(() => {
+        pingPoo();
+      }, randTim * 60000);
+    } else {
+      logger(`done pinging, exiting.`);
+      process.exit(69);
+    }
   }
 });

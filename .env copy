@@ -1,6 +1,7 @@
 TOKEN=tokenhere
-CHANNELID=introchannelid
+MEMID=memberid
 WEBURL=welcomewebhookrurl
-ROLEID=welcomeroleid
-WELMOTES=<a:AU_wavy:780258726858850304>|<:AU_kiwiheart:851064742478217216>
-WELCOMES=Hi hi! Welcome! <ping>|Yello there <ping>|Hey <ping>, welcome!Welcome to AU, <ping>!|!<ping> emocleW|Yeblo <ping>! Welcome!
+TIMERANGE=rangeofinterval
+PINGRANGE=numberofpings
+MOTES=<a:AU_wavy:780258726858850304>|<:AU_kiwiheart:851064742478217216>|🎉|🥳
+MESSAGES=Happi buddae <mote> <ping>!|Hbd! <ping> <mote>|<mote> Habby burbday <ping>! <mote>|<mote> !yadhtirb yppaH ,<ping>
