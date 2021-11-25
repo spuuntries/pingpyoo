@@ -1,7 +1,7 @@
 TOKEN=tokenhere
 MEMID=memberid
-WEBURL=welcomewebhookrurl
+WEBURL=birbdaywebhookurl
 TIMERANGE=rangeofinterval
 PINGRANGE=numberofpings
-MOTES=<a:AU_wavy:780258726858850304>|<:AU_kiwiheart:851064742478217216>|🎉|🥳
-MESSAGES=Happi buddae <mote> <ping>!|Hbd! <ping> <mote>|<mote> Habby burbday <ping>! <mote>|<mote> !yadhtirb yppaH ,<ping>
+BIRBMOTES=<a:AU_wavy:780258726858850304>|<:AU_kiwiheart:851064742478217216>|🎉|🥳
+BIRBDAE=Happi buddae <mote> <ping>!|Hbd! <ping> <mote>|<mote> Habby burbday <ping>! <mote>|<mote> !yadhtirb yppaH ,<ping>
