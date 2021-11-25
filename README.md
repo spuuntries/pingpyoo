@@ -35,7 +35,12 @@ Simple enough, lmao.
 ### Brief explanation of the configs:
 
 The number of pings can be changed in `pingrange`, once the bot reaches this number it'll stop.  
-Currently the limitation of this means that you'll need to delete or move the `.db` file to restart the count, I suggest just increasing the count instead.  
+
+Currently you'll need to delete or move the `.db` file to restart the count, I suggest just increasing the count instead.  
+
 The `birbmotes` can be more than two emotes so long as they're all split by a `|`.  
+
 The same thing goes for the `birbdae` messages, with the difference being the addition of `<ping>` placeholder for pings and `<mote>` placeholder for emotes.  
+
 The interval between each ping is randomized in minutes, you can customize the range of this randomization by changing the `timerange`.
+> (P.S. the randomizer function's p wack lmao)
